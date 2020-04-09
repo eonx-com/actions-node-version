@@ -1,0 +1,18 @@
+name: 'eonx-com/actions-node-version'
+description: 'Generate a new version of a NodeJS Package.'
+author: 'Jy Kingston <jy.kingston@eonx.com>'
+
+branding:
+  icon: 'x'
+  color: 'red'
+
+inputs:
+  GITHUB_TOKEN:
+    description: 'GitHub Access Token'
+    required: true
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  env:
+    GITHUB_TOKEN: ${{ inputs.GITHUB_TOKEN }}
