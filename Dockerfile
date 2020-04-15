@@ -2,7 +2,7 @@ FROM node:12.10.0
 
 LABEL maintainer="Jy Kingston <jy.kingston@eonx.com>"
 
-RUN apt-get update;
+RUN apt update; \
     apt-get install bash;
 
 COPY entrypoint.sh /entrypoint.sh
