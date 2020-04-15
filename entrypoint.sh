@@ -1,4 +1,4 @@
-#!/usr/env/bin bash
+#!/usr/bin/env sh
 set -eo pipefail
 
 export GITHUB_TOKEN=${GITHUB_TOKEN}
