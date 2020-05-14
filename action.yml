@@ -10,9 +10,13 @@ inputs:
   GITHUB_TOKEN:
     description: 'GitHub Access Token'
     required: true
+  RELEASE:
+    description: 'True/false to release new version'
+    required: true
 
 runs:
   using: 'docker'
   image: 'Dockerfile'
   env:
     GITHUB_TOKEN: ${{ inputs.GITHUB_TOKEN }}
+    RELEASE: ${{ inputs.RELEASE }}
